@@ -1,3 +1,9 @@
+/*
+prototype原型模式
+定义：用原型实例制定创建对象的种类，并通过拷贝这些原型创建新的对象
+作者：   alphabet
+日期：   20201217
+*/
 package main
 
 import "fmt"
