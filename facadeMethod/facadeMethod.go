@@ -13,7 +13,7 @@ type StockOne struct {
 }
 
 func (s *StockOne) Buy() {
-	fmt.Println("Buy ", s.name)
+	fmt.Println("Buy", s.name)
 }
 
 type StockTwo struct {
@@ -44,7 +44,7 @@ func (f *Fund) JiucaiBuy() {
 	f.st2.Buy()
 }
 
-func (f *Fund) SmartBuy() {
+func (f *Fund) SmartGuysBuy() {
 	fmt.Println("聪明人买法")
 	f.st3.Buy()
 }
