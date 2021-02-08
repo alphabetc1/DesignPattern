@@ -1,5 +1,6 @@
 /*
-第二种抽象类的实现方式
+template模板模式
+定义：定义一个操作中的算法的骨架，而将一些具体步骤延迟到子类中。
 作者：   alphabetc1
 日期：   20201217
 */
@@ -13,12 +14,17 @@ type Speak interface {
 	ThirdSentence()
 }
 
-type Template struct{}
+type Template struct {
+	s Speak //抽象基类，在子类中具体实现
+}
 
-func (t *Template) Talk(s Speak) {
-	s.FirstSentence()
-	s.SecondSentence()
-	s.ThirdSentence()
+func (t *Template) Talk() {
+	if t == nil {
+		return
+	}
+	t.s.FirstSentence()
+	t.s.SecondSentence()
+	t.s.ThirdSentence()
 }
 
 type Chicken struct {

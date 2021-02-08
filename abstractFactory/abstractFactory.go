@@ -1,7 +1,7 @@
 /*
 AbstractFactory 抽象工厂模式
 定义：提供一个创建一系列相关或互相依赖对象的接口，而无需指定它们具体的类。
-作者：   alphabet
+作者：   alphabetc1
 日期：   20210208
 */
 package main

@@ -1,3 +1,8 @@
+/*
+FactoryMethod 工厂方法模式
+作者：   alphabetc1
+日期：   20201208
+*/
 package main
 
 type OperationFunc interface {
